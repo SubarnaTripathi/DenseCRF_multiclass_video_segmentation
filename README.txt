@@ -1,15 +1,17 @@
-//Modified by Subarna Tripathi in order to support inference for a a number of video frames together
+//Modified by Subarna Tripathi in order to support inference for a number of video frames together
 Only the inference module has been extended from image to video; however learning remained unchanged.
 all the modification in the original code is under the compile time switch # define MIMAGE
 ( MIMAGE stands for multiple image )
+the software is built on top of Stanford's DenseCRF.
 
 This method is inspired by the paper :
 	José M. Alvarez, Mathieu Salzmann, Nick Barnes. Large-Scale Semantic Co-Labeling of Image Sets. IEEE Winter Conference on Applications of Computer Vision (WACV 14).
-
 example use:
 ============
 ../examples/camvid/im1.ppm ../examples/camvid/anno1.ppm ../output/out.ppm
 
+===========================================================================
+===========================================================================
 
 DenseCRF - Code
 =============
